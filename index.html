@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+</head>
+<body>
+    <div class="profile-card">
+        <div class="card-content">
+            <div class="profile-info">
+                <!-- Profile Picture -->
+                <img
+                    data-testid="profilePicture"
+                    src="./images/profile.jpg"
+                    alt="Profile"
+                    class="profile-picture"
+                />
+                
+                <!-- Full Name -->
+                <h2 
+                    data-testid="fullName"
+                    class="full-name"
+                >
+                  Nweke Chidimma Callista
+                </h2>
+                
+                <!-- Job Title -->
+                <p 
+                    data-testid="jobTitle"
+                    class="job-title"
+                >
+                    Frontend Developer
+                </p>
+                
+                <!-- Short Bio -->
+                <p 
+                    data-testid="shortBio"
+                    class="bio"
+                >
+                    Passionate frontend developer with a keen eye for creating beautiful and functional user interfaces. Constantly learning and growing in the ever-evolving world of web development.
+                </p>
+                
+                <!-- Location -->
+                <div 
+                    data-testid="currentLocation"
+                    class="location info-item"
+                >
+                    <i data-lucide="map-pin"></i>
+                    <span>Abuja, Nigeria</span>
+                </div>
+                
+                <!-- Email -->
+                <div 
+                    data-testid="emailAddress"
+                    class="email info-item"
+                >
+                    <i data-lucide="mail"></i>
+                    <a href="mailto:john@example.com">nwekechidimma88@gmail.com</a>
+                </div>
+                
+                <!-- Social Links -->
+                <div 
+                    data-testid="socialLinks"
+                    class="social-links"
+                >
+                    <a href="https://github.com/Callylove" class="social-icon">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nweke-chidimma-41ab7a246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="https://x.com/callylove10?t=B6nUBsihYdnxMUiuIiL97Q&s=09" class="social-icon">
+                        <i data-lucide="twitter"></i>
+                    </a>
+                </div>
+                
+                <!-- UTC Time -->
+                <div 
+                    data-testid="currentTimeUTC"
+                    class="time info-item"
+                >
+                    <i data-lucide="clock"></i>
+                    <span id="utcTime"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
